@@ -1,6 +1,6 @@
 Ahmad Aunul Ma`bud (05111940000164)
 
-## Tugas 1
+# Tugas 1
 
 1. Cari benda di sekitar Anda yang berawalan huruf B, G, atau L.
 
@@ -18,7 +18,7 @@ Ahmad Aunul Ma`bud (05111940000164)
 
 <img src="img/kanan-atas.jpg" width="400">
 
-## Kiri atas
+### Kiri atas
 
 <img src="img/kiri-atas.jpg" width="400">
 

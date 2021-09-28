@@ -8,7 +8,7 @@ Ahmad Aunul Ma`bud (05111940000164)
 
 3. Ambil foto benda tersebut dari empat sudut pandang yang berbeda: kanan atas, kiri atas, belakang atas, depan atas (sudut kemiringan bebas).
 
-## Nama Benda: Laptop Kentang
+## Nama Benda: Laptop
 
 ### Depan atas
 

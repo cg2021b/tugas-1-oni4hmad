@@ -12,16 +12,16 @@ Ahmad Aunul Ma`bud (05111940000164)
 
 ### Depan atas
 
-<img src="img/depan-atas.jpg" width="400" title="laptop depan atas">
+<img src="img/depan-atas.jpg" width="400">
 
-###Kanan atas
+### Kanan atas
 
-<img src="img/kanan-atas.jpg" width="400" title="laptop kanan atas">
+<img src="img/kanan-atas.jpg" width="400">
 
 ## Kiri atas
 
-<img src="img/kiri-atas.jpg" width="400" title="laptop kiri atas">
+<img src="img/kiri-atas.jpg" width="400">
 
-###Belakang atas
+### Belakang atas
 
-<img src="img/belakang-atas.jpg" width="400" title="laptop belakang atas">
+<img src="img/belakang-atas.jpg" width="400">

@@ -85,13 +85,22 @@ function main() {
         // laptop kiri atas
 
         // kiri layar
-        -0.8, 0.1,   0.1, 0.1, 0.1,
-        -0.5, 0.3,   0.1, 0.1, 0.1,
-        -0.455, 0.075,   0.1, 0.1, 0.1,
+        -0.8, 0.1,   0.2, 0.2, 0.2,
+        -0.5, 0.3,   0.2, 0.2, 0.2,
+        -0.455, 0.075,   0.2, 0.2, 0.2,
         
-        -0.8, 0.1,   0.1, 0.1, 0.1,
-        -0.65, -0.15,   0.1, 0.1, 0.1,
-        -0.455, 0.075,   0.1, 0.1, 0.1,
+        -0.8, 0.1,   0.2, 0.2, 0.2,
+        -0.65, -0.15,   0.2, 0.2, 0.2,
+        -0.455, 0.075,   0.2, 0.2, 0.2,
+
+        // kiri layar dalam
+        -0.735, 0.085,   0.0, 0.0, 0.0,
+        -0.515, 0.25,   0.0, 0.0, 0.0,
+        -0.475 ,0.074,   0.0, 0.0, 0.0,
+        
+        -0.735, 0.085,   0.0, 0.0, 0.0,
+        -0.64, -0.1,   0.0, 0.0, 0.0,
+        -0.475 ,0.074,   0.0, 0.0, 0.0,
 
         // kiri body laptop
         -0.65, -0.15,   0.7, 0.7, 0.7,
@@ -101,6 +110,15 @@ function main() {
         -0.65, -0.15,   0.7, 0.7, 0.7,
         -0.2, 0.0,   0.7, 0.7, 0.7,
         -0.3, -0.3,   0.7, 0.7, 0.7,
+
+        // kiri body shadow
+        -0.65, -0.15,   0.3, 0.3, 0.3,
+        -0.3, -0.3,   0.3, 0.3, 0.3,
+        -0.31, -0.31,   0.3, 0.3, 0.3,
+
+        -0.65, -0.15,   0.3, 0.3, 0.3,
+        -0.31, -0.31,   0.3, 0.3, 0.3,
+        -0.65, -0.165,   0.3, 0.3, 0.3,
 
         // kiri keyboard
         -0.44, 0.05,   0.3, 0.3, 0.3,
@@ -117,13 +135,22 @@ function main() {
         // laptop depan atas
 
         // depan layar
-        0.2, 0.3,   0.1, 0.1, 0.1,
-        0.8, 0.3,   0.1, 0.1, 0.1,
-        0.725, 0.0,   0.1, 0.1, 0.1,
+        0.2, 0.3,   0.2, 0.2, 0.2,
+        0.8, 0.3,   0.2, 0.2, 0.2,
+        0.725, 0.0,   0.2, 0.2, 0.2,
 
-        0.725, 0.0,   0.1, 0.1, 0.1,
-        0.275, 0.0,   0.1, 0.1, 0.1,
-        0.2, 0.3,   0.1, 0.1, 0.1,
+        0.725, 0.0,   0.2, 0.2, 0.2,
+        0.275, 0.0,   0.2, 0.2, 0.2,
+        0.2, 0.3,   0.2, 0.2, 0.2,
+        
+        // depan layar dalam
+        0.25, 0.25,   0.0, 0.0, 0.0,
+        0.75, 0.25,   0.0, 0.0, 0.0,
+        0.7, 0.025,   0.0, 0.0, 0.0,
+
+        0.25, 0.25,   0.0, 0.0, 0.0,
+        0.3, 0.025,   0.0, 0.0, 0.0,
+        0.7, 0.025,   0.0, 0.0, 0.0,
         
         // depan body laptop
         0.275, 0.0,   0.7, 0.7, 0.7,
@@ -133,6 +160,15 @@ function main() {
         0.275, 0.0,   0.7, 0.7, 0.7,
         0.2, -0.3,   0.7, 0.7, 0.7,
         0.8, -0.3,   0.7, 0.7, 0.7,
+
+        // depan body shadow
+        0.2, -0.3,   0.3, 0.3, 0.3,
+        0.8, -0.3,   0.3, 0.3, 0.3,
+        0.8, -0.315,   0.3, 0.3, 0.3,
+
+        0.2, -0.3,   0.3, 0.3, 0.3,
+        0.8, -0.315,   0.3, 0.3, 0.3,
+        0.2, -0.315,   0.3, 0.3, 0.3,
 
         // depan keyboard
         0.3, -0.025,   0.3, 0.3, 0.3,
@@ -144,11 +180,33 @@ function main() {
         0.725, -0.15,   0.3, 0.3, 0.3
     ];
 
-    var triangleVertices = [...triangleVertices_kiri, ...triangleVertices_kanan];
+    var lineVertices_kiri = 
+    [
+        // touch pad
+        -0.34,-0.05,   0.5, 0.5, 0.5,
+        -0.25,-0.080,   0.5, 0.5, 0.5,
+        -0.287,-0.18,   0.5, 0.5, 0.5,
+        -0.39,-0.140,   0.5, 0.5, 0.5,
+        -0.34,-0.05,   0.5, 0.5, 0.5
+    ];
+
+    var lineVertices_kanan = 
+    [
+        // touch pad
+        0.415, -0.175,   0.5, 0.5, 0.5,
+        0.585, -0.175,   0.5, 0.5, 0.5,
+        0.6, -0.275,   0.5, 0.5, 0.5,
+        0.4, -0.275,   0.5, 0.5, 0.5,
+        0.415, -0.175,   0.5, 0.5, 0.5
+    ];
+
+    var verticesLaptop = [...triangleVertices_kiri, ...triangleVertices_kanan];
+    var verticesTouchpad = [...lineVertices_kiri, ...lineVertices_kanan];
+    var vertices = [...verticesLaptop, ...verticesTouchpad];
 
     var triangleVertexBufferObject = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, triangleVertexBufferObject);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(triangleVertices), gl.STATIC_DRAW);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 
     var positionAttribLocation = gl.getAttribLocation(program, 'vertPosition');
     var colorAttribLocation = gl.getAttribLocation(program, 'vertColor');
@@ -175,7 +233,7 @@ function main() {
     //
     //  Main render loop
     //
-    const uTranslate = gl.getUniformLocation(program, 'uTranslate');
+    var uTranslate = gl.getUniformLocation(program, 'uTranslate');
     var speed = 0.0164;
     var dy = 0;
 
@@ -207,9 +265,11 @@ function main() {
         gl.useProgram(program);
         gl.uniformMatrix4fv(uTranslate, false, kiri);
         gl.drawArrays(gl.TRIANGLES, 0, triangleVertices_kiri.length/5);
+        gl.drawArrays(gl.LINE_STRIP, verticesLaptop.length/5, lineVertices_kiri.length/5);
 
 		gl.uniformMatrix4fv(uTranslate, false, kanan);
         gl.drawArrays(gl.TRIANGLES, triangleVertices_kiri.length/5, triangleVertices_kanan.length/5);
+        gl.drawArrays(gl.LINE_STRIP, (vertices.length-lineVertices_kanan.length)/5, lineVertices_kanan.length/5);
             
         requestAnimationFrame(render);
     }

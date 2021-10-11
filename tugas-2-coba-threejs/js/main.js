@@ -207,7 +207,7 @@ let showLight = function (type, x = null, y = null, z = null) {
             break;
         case lightType.hemisphereLight:
             // light: HemisphereLight
-            const hemisphereLight = new THREE.HemisphereLight(0xffffff, .75);
+            const hemisphereLight = new THREE.HemisphereLight(0xb1e1ff, 0xb97a20, .75);
             hemisphereLight.position.x = x ?? 3;
             hemisphereLight.position.y = y ?? 0;
             hemisphereLight.position.z = z ?? 1;

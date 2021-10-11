@@ -22,7 +22,7 @@ const lightType = Object.freeze ({
     ambientLight: 4
 });
 
-// movement speed
+// rotation speed
 let add = 0.01;
 
 let createCube = function () {

@@ -160,15 +160,7 @@ let init = function () {
 
     // Light
     addLight();
-
-    let sprite = new THREE.TextGeometry({
-        text: 'Hello World!',
-        fontFamily: 'Arial, Helvetica, sans-serif',
-        fontSize: 12,
-        color: '#ffbbff',
-      });
-      scene.add(sprite);
-
+    
     // Raycaster
     rayCast = new THREE.Raycaster();
     mouse = new THREE.Vector2();

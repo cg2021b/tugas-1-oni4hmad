@@ -50,7 +50,7 @@ let onMouseClick = function(e) {
         if (clickedObj.includes(obj.object)){
             obj.object.material.emissive.set(0x0);
             index = clickedObj.indexOf(obj.object);
-            if (index > -1) clickedObj.splice(obj.object, 1);
+            if (index > -1) clickedObj.splice(index, 1);
             break;
         } else {
             obj.object.material.emissive.set(0x3a3a3a);
@@ -68,7 +68,7 @@ let onMouseClick = function(e) {
             // remove from sphere[], scene, dispose, renderer
             clickedObj.forEach(obj => {
                 index = spheres.indexOf(obj);
-                if (index > -1) spheres.splice(obj, 1);
+                if (index > -1) spheres.splice(index, 1);
                 scene.remove(obj);
                 obj.geometry.dispose();
                 obj.material.dispose();
@@ -160,7 +160,7 @@ let init = function () {
 
     // Light
     addLight();
-    
+
     // Raycaster
     rayCast = new THREE.Raycaster();
     mouse = new THREE.Vector2();
